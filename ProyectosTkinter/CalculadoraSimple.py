@@ -36,7 +36,7 @@ class CalculadoraSimple(tk.Tk):
                 self.MostrarResultado.insert(0,Resultado)
             except ZeroDivisionError:
                 self.MostrarResultado.delete(0,tk.END)
-                self.MostrarResultado.insert(0,"(Error)eres animal,no?")
+                self.MostrarResultado.insert(0,"Error al dividir entre 0")
             except Exception:
                 self.MostrarResultado.delete(0,tk.END)
                 self.MostrarResultado.insert(0,"Error de sintaxis")
